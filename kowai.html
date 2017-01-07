@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script src="kowai.js"></script>
+		<script>
+			function intern_function(){
+				var field = document.getElementById("intern");
+				if (field.innerHTML != "Ana has 7 tentacles."){
+				field.innerHTML = "Ana has 7 tentacles.";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p id="inline" onclick="var field = document.getElementById('inline');if (field.innerHTML != 'Ana has 7 tentacles.'){field.innerHTML = 'Ana has 7 tentacles';}">Ana has 10 tentacles.-Click me-</p>
+		
+		<br /><br />
+		
+		<p id="intern" onclick="intern_function()">Ana has 10 tentacles.-Click me-</p>
+		
+		<br /><br />
+		
+		<p id="extern" onclick="extern_function()">Ana has 10 tentacles.-Click me-</p>
+	</body>
+</html>
